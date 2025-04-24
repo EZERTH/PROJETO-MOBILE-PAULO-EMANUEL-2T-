@@ -24,9 +24,9 @@ export default function HomeScreen() {
       </ThemedView><Pressable
           onPress={() => router.push('/explore')}
           style={({ pressed }) => ({
-            backgroundColor: pressed ? '#fdfffe' : '#fdfffe', // Escurece quando pressionado
-            padding: 6,
-            borderRadius: 30,
+            backgroundColor: pressed ? '#841584' : '#fff', // Escurece quando pressionado
+            padding: 7,
+            borderRadius: 40,
             alignItems: 'center',
             justifyContent: 'center',
             width: 38,
@@ -35,6 +35,7 @@ export default function HomeScreen() {
         >
           <ThemedText style={{ color: '', fontWeight: 'bold' }}>PIX</ThemedText>
         </Pressable>
+        
       
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Saldo da conta:</ThemedText>

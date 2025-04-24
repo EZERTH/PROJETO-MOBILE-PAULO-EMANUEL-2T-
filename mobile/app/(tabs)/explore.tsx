@@ -10,7 +10,7 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#D0D0D0', dark: '#40004D' }}
       headerImage={
         <IconSymbol
           size={310}
@@ -50,13 +50,18 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
+      <Collapsible title="informações">
+        <ThemedText>
+          A área pix é muito interessante para transferências rápidas, porém é necessário haver precaução para ter segurança.
+        </ThemedText>
+      </Collapsible>
     </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   headerImage: {
-    color: '#808080',
+    color: '#841584',
     bottom: -90,
     left: -35,
     position: 'absolute',
